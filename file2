@@ -1,1 +1,73 @@
-this is me
+When we are using linux as OS then use yum command
+
+	1. First install git in ur server as 
+	Yum install git -y
+	
+   2. Make the directory mkdir Dir1
+   3. add this Dir in ur repository by using command 
+        git init
+  4. git add file4
+	5. Git status (will show in green line)
+	6. Git commit -m "the file created" file4
+	7. Git status
+	8. Git log 
+	9. Git show
+	10. Git branch
+
+
+Day2
+
+[root@ip-172-31-10-64 Dir1]# git branch
+ adding new branch 
+
+[root@ip-172-31-10-64 Dir1]# git branch priyanka
+ 
+Git branch 
+
+  Priyanka
+* master
+
+Git checkout Priyanka 
+----- it will go to Priyanka branch 
+
+Git branch Dev 
+New branch will be created
+
+
+how to create token :
+settings(top right-drop down)> left side last <developers setting> personal access token>classic>generate new token classic(select repo and workflow)>
+generate
+
+Git pull:
+git clone url
+git pull origin master
+(check the branch by git branch)
+
+
+Git push :
+git remote add origin https://<USERNAME>:<TOKEN>@github.com/<USERNAME>/<REPO>.git
+
+git remote add origin https://pri2sinha:tokenpassword@github.com/pri2sinha/repo.git
+
+git add .
+
+git commit -m "Initial commit"
+
+Check the branch---- git branch ----------accordingly add amin or master
+
+git push -u origin main
+
+
+when copy from one Git account to another------------------
+
+1. git clone https://github.com/Venkatareddy1714/jenkins-java-project123.git
+cd jenkins-java-project123
+2. git remote set-url origin https://pri2sinha:token@github.com/pri2sinha/repo.git
+3. git branch
+4.git push -u origin master
+
+
+
+
+
+
